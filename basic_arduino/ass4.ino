@@ -15,14 +15,7 @@ int bux[6], buy[6];
 int enermy[10];
 int enx[10], eny[10];
 int check[8][8];
-/*
-  Now we need a LedControl to work with.
- ***** These pin numbers will probably not work with your hardware *****
-  pin 12 is connected to the DataIn
-  pin 11 is connected to the CLK
-  pin 10 is connected to LOAD
-  We have only a single MAX72XX.
-*/
+
 LedControl lc = LedControl(11, 13, 10, 1);
 /* we always wait a bit between updates of the display */
 unsigned long delaytime = 100;
